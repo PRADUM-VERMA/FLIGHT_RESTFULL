@@ -1,0 +1,14 @@
+@EndUserText.label: 'ACCESS CONTROL FOR ZIPTRAVEL_1234'
+@MappingRole: true
+define role ZIPTRAVEL_1234 {
+    grant
+        select
+            on
+                ZIPTRAVEL_1234
+                    where
+                  //      ( TravelStatus )                       
+                //      = aspect pfcg_auth ( ZOPSTAT123, ZOPSTAT123,  actvt = '03') 
+                  //      and
+                    //    CurrencyCode = 'EUR'; 
+                        TRUE;
+}
